@@ -1,0 +1,140 @@
+{
+  "name": "Sample JSON Tree Data",
+  "version": "1.0.0",
+  "description": "A sample JSON file for testing the tree visualization",
+  "author": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "profile": {
+      "age": 30,
+      "location": "New York",
+      "skills": ["JavaScript", "React", "TypeScript", "D3.js"]
+    }
+  },
+  "project": {
+    "name": "JSON Tree Editor",
+    "type": "web-application",
+    "framework": "React",
+    "features": [
+      {
+        "name": "Tree Visualization",
+        "description": "Interactive D3.js tree rendering",
+        "enabled": true
+      },
+      {
+        "name": "Node Editing",
+        "description": "Edit nodes with type conversion",
+        "enabled": true
+      },
+      {
+        "name": "Search Functionality",
+        "description": "Search through tree nodes",
+        "enabled": true
+      }
+    ],
+    "dependencies": {
+      "react": "^18.2.0",
+      "d3": "^7.8.5",
+      "typescript": "^4.9.5",
+      "lucide-react": "^0.263.1"
+    },
+    "configuration": {
+      "theme": "light",
+      "animation": true,
+      "debugMode": false,
+      "maxDepth": 10,
+      "performance": {
+        "virtualScrolling": true,
+        "lazyLoading": false,
+        "cacheSize": 1000
+      }
+    }
+  },
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "username": "alice",
+        "email": "alice@example.com",
+        "active": true,
+        "roles": ["admin", "user"],
+        "preferences": {
+          "theme": "dark",
+          "notifications": true,
+          "language": "en"
+        }
+      },
+      {
+        "id": 2,
+        "username": "bob",
+        "email": "bob@example.com",
+        "active": false,
+        "roles": ["user"],
+        "preferences": {
+          "theme": "light",
+          "notifications": false,
+          "language": "es"
+        }
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org1",
+        "name": "Tech Solutions Inc",
+        "members": [
+          {
+            "userId": 1,
+            "role": "admin"
+          },
+          {
+            "userId": 2,
+            "role": "developer"
+          }
+        ],
+        "projects": [
+          {
+            "id": "proj1",
+            "name": "Web Application",
+            "status": "active",
+            "team": ["alice", "bob"],
+            "metadata": {
+              "created": "2024-01-15",
+              "lastModified": "2024-07-18",
+              "tags": ["web", "frontend", "react"]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "statistics": {
+    "totalNodes": 45,
+    "maxDepth": 6,
+    "nodeTypes": {
+      "object": 15,
+      "array": 8,
+      "string": 12,
+      "number": 6,
+      "boolean": 4,
+      "null": 0
+    },
+    "performance": {
+      "renderTime": 150,
+      "memoryUsage": 2.3,
+      "lastUpdate": "2024-07-18T04:15:00Z"
+    }
+  },
+  "metadata": {
+    "created": "2024-07-18T00:00:00Z",
+    "modified": "2024-07-18T04:15:00Z",
+    "version": "1.0.0",
+    "format": "JSON",
+    "encoding": "UTF-8",
+    "notes": [
+      "This is a sample JSON file for testing",
+      "Contains nested objects and arrays",
+      "Includes various data types",
+      "Designed for tree visualization testing"
+    ]
+  }
+}
